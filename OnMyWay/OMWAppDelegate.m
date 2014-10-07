@@ -23,6 +23,7 @@
     OMWMasterViewController *controller = (OMWMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
+    NSLog(@"test");
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
