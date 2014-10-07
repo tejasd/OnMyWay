@@ -95,6 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099FF77D19E3C0E5008934FF /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		EF1A22C119E3BA2400C347EB = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +138,7 @@
 		EF1A22D519E3BA2500C347EB /* OnMyWay */ = {
 			isa = PBXGroup;
 			children = (
+				099FF77D19E3C0E5008934FF /* src */,
 				EF1A22DE19E3BA2500C347EB /* OMWAppDelegate.h */,
 				EF1A22DF19E3BA2500C347EB /* OMWAppDelegate.m */,
 				EF1A22E119E3BA2500C347EB /* Main.storyboard */,
@@ -481,6 +489,7 @@
 				EF1A230719E3BA2500C347EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF1A230819E3BA2500C347EB /* Build configuration list for PBXNativeTarget "OnMyWayTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +498,7 @@
 				EF1A230A19E3BA2500C347EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
