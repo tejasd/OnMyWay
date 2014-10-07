@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099FF78019E3C527008934FF /* CreateLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099FF77F19E3C527008934FF /* CreateLocationViewController.m */; };
 		EF1A22CE19E3BA2400C347EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22CD19E3BA2400C347EB /* Foundation.framework */; };
 		EF1A22D019E3BA2500C347EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */; };
 		EF1A22D219E3BA2500C347EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D119E3BA2500C347EB /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		099FF77E19E3C527008934FF /* CreateLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateLocationViewController.h; path = src/CreateLocationViewController.h; sourceTree = "<group>"; };
+		099FF77F19E3C527008934FF /* CreateLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateLocationViewController.m; path = src/CreateLocationViewController.m; sourceTree = "<group>"; };
 		EF1A22CA19E3BA2400C347EB /* OnMyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnMyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1A22CD19E3BA2400C347EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,8 @@
 		099FF77D19E3C0E5008934FF /* src */ = {
 			isa = PBXGroup;
 			children = (
+				099FF77E19E3C527008934FF /* CreateLocationViewController.h */,
+				099FF77F19E3C527008934FF /* CreateLocationViewController.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -138,7 +143,6 @@
 		EF1A22D519E3BA2500C347EB /* OnMyWay */ = {
 			isa = PBXGroup;
 			children = (
-				099FF77D19E3C0E5008934FF /* src */,
 				EF1A22DE19E3BA2500C347EB /* OMWAppDelegate.h */,
 				EF1A22DF19E3BA2500C347EB /* OMWAppDelegate.m */,
 				EF1A22E119E3BA2500C347EB /* Main.storyboard */,
@@ -146,6 +150,7 @@
 				EF1A22E819E3BA2500C347EB /* OMWMasterViewController.m */,
 				EF1A22EA19E3BA2500C347EB /* OMWDetailViewController.h */,
 				EF1A22EB19E3BA2500C347EB /* OMWDetailViewController.m */,
+				099FF77D19E3C0E5008934FF /* src */,
 				EF1A22ED19E3BA2500C347EB /* Images.xcassets */,
 				EF1A22E419E3BA2500C347EB /* OnMyWay.xcdatamodeld */,
 				EF1A22D619E3BA2500C347EB /* Supporting Files */,
@@ -285,6 +290,7 @@
 				EF1A22DC19E3BA2500C347EB /* main.m in Sources */,
 				EF1A22E919E3BA2500C347EB /* OMWMasterViewController.m in Sources */,
 				EF1A22E619E3BA2500C347EB /* OnMyWay.xcdatamodeld in Sources */,
+				099FF78019E3C527008934FF /* CreateLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
