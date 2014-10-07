@@ -10,7 +10,7 @@
 
 @interface OMWDetailViewController ()
 - (void)configureView;
-@property (strong, nonatomic) MKPointAnnotation *userLocation;
+@property (strong, nonatomic) MKPointAnnotation *pinLocation;
 @end
 
 @implementation OMWDetailViewController
@@ -56,18 +56,21 @@
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
     // Add an annotation
-    if (!self.userLocation) {
-        self.userLocation = [[MKPointAnnotation alloc] init];
-        self.userLocation.title = @"Where am I?";
-        self.userLocation.subtitle = @"I'm here!!!";
-        self.userLocation.coordinate = userLocation.coordinate;
-        [self.mapView addAnnotation:self.userLocation];
+    if (!self.pinLocation) {
+        self.pinLocation = [[MKPointAnnotation alloc] init];
+        self.pinLocation.title = @"Where am I?";
+        self.pinLocation.subtitle = @"I'm here!!!";
+        self.pinLocation.coordinate = userLocation.coordinate;
+        [self.mapView addAnnotation:self.pinLocation];
     }
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     MKPinAnnotationView *pinAnnotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
                                                                              reuseIdentifier:@"current"];
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return  nil;
+    }
     pinAnnotationView.animatesDrop = YES;
     pinAnnotationView.draggable = YES;
     pinAnnotationView.pinColor = MKPinAnnotationColorRed;
