@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1A22CE19E3BA2400C347EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22CD19E3BA2400C347EB /* Foundation.framework */; };
+		EF1A22D019E3BA2500C347EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */; };
+		EF1A22D219E3BA2500C347EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D119E3BA2500C347EB /* UIKit.framework */; };
+		EF1A22D419E3BA2500C347EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D319E3BA2500C347EB /* CoreData.framework */; };
+		EF1A22DA19E3BA2500C347EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1A22D819E3BA2500C347EB /* InfoPlist.strings */; };
+		EF1A22DC19E3BA2500C347EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A22DB19E3BA2500C347EB /* main.m */; };
+		EF1A22E019E3BA2500C347EB /* OMWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A22DF19E3BA2500C347EB /* OMWAppDelegate.m */; };
+		EF1A22E319E3BA2500C347EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A22E119E3BA2500C347EB /* Main.storyboard */; };
+		EF1A22E619E3BA2500C347EB /* OnMyWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF1A22E419E3BA2500C347EB /* OnMyWay.xcdatamodeld */; };
+		EF1A22E919E3BA2500C347EB /* OMWMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A22E819E3BA2500C347EB /* OMWMasterViewController.m */; };
+		EF1A22EC19E3BA2500C347EB /* OMWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A22EB19E3BA2500C347EB /* OMWDetailViewController.m */; };
+		EF1A22EE19E3BA2500C347EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1A22ED19E3BA2500C347EB /* Images.xcassets */; };
+		EF1A22F519E3BA2500C347EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22F419E3BA2500C347EB /* XCTest.framework */; };
+		EF1A22F619E3BA2500C347EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22CD19E3BA2400C347EB /* Foundation.framework */; };
+		EF1A22F719E3BA2500C347EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D119E3BA2500C347EB /* UIKit.framework */; };
+		EF1A22F819E3BA2500C347EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D319E3BA2500C347EB /* CoreData.framework */; };
+		EF1A230019E3BA2500C347EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1A22FE19E3BA2500C347EB /* InfoPlist.strings */; };
+		EF1A230219E3BA2500C347EB /* OnMyWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A230119E3BA2500C347EB /* OnMyWayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF1A22F919E3BA2500C347EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF1A22C219E3BA2400C347EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF1A22C919E3BA2400C347EB;
+			remoteInfo = OnMyWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF1A22CA19E3BA2400C347EB /* OnMyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnMyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1A22CD19E3BA2400C347EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF1A22D119E3BA2500C347EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF1A22D319E3BA2500C347EB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EF1A22D719E3BA2500C347EB /* OnMyWay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnMyWay-Info.plist"; sourceTree = "<group>"; };
+		EF1A22D919E3BA2500C347EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1A22DB19E3BA2500C347EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF1A22DD19E3BA2500C347EB /* OnMyWay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnMyWay-Prefix.pch"; sourceTree = "<group>"; };
+		EF1A22DE19E3BA2500C347EB /* OMWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMWAppDelegate.h; sourceTree = "<group>"; };
+		EF1A22DF19E3BA2500C347EB /* OMWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMWAppDelegate.m; sourceTree = "<group>"; };
+		EF1A22E219E3BA2500C347EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF1A22E519E3BA2500C347EB /* OnMyWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnMyWay.xcdatamodel; sourceTree = "<group>"; };
+		EF1A22E719E3BA2500C347EB /* OMWMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMWMasterViewController.h; sourceTree = "<group>"; };
+		EF1A22E819E3BA2500C347EB /* OMWMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMWMasterViewController.m; sourceTree = "<group>"; };
+		EF1A22EA19E3BA2500C347EB /* OMWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMWDetailViewController.h; sourceTree = "<group>"; };
+		EF1A22EB19E3BA2500C347EB /* OMWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMWDetailViewController.m; sourceTree = "<group>"; };
+		EF1A22ED19E3BA2500C347EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF1A22F319E3BA2500C347EB /* OnMyWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnMyWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1A22F419E3BA2500C347EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF1A22FD19E3BA2500C347EB /* OnMyWayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnMyWayTests-Info.plist"; sourceTree = "<group>"; };
+		EF1A22FF19E3BA2500C347EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1A230119E3BA2500C347EB /* OnMyWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnMyWayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1A22C719E3BA2400C347EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A22D019E3BA2500C347EB /* CoreGraphics.framework in Frameworks */,
+				EF1A22D419E3BA2500C347EB /* CoreData.framework in Frameworks */,
+				EF1A22D219E3BA2500C347EB /* UIKit.framework in Frameworks */,
+				EF1A22CE19E3BA2400C347EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A22F019E3BA2500C347EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A22F519E3BA2500C347EB /* XCTest.framework in Frameworks */,
+				EF1A22F819E3BA2500C347EB /* CoreData.framework in Frameworks */,
+				EF1A22F719E3BA2500C347EB /* UIKit.framework in Frameworks */,
+				EF1A22F619E3BA2500C347EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1A22C119E3BA2400C347EB = {
+			isa = PBXGroup;
+			children = (
+				EF1A22D519E3BA2500C347EB /* OnMyWay */,
+				EF1A22FB19E3BA2500C347EB /* OnMyWayTests */,
+				EF1A22CC19E3BA2400C347EB /* Frameworks */,
+				EF1A22CB19E3BA2400C347EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1A22CB19E3BA2400C347EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A22CA19E3BA2400C347EB /* OnMyWay.app */,
+				EF1A22F319E3BA2500C347EB /* OnMyWayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1A22CC19E3BA2400C347EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A22CD19E3BA2400C347EB /* Foundation.framework */,
+				EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */,
+				EF1A22D119E3BA2500C347EB /* UIKit.framework */,
+				EF1A22D319E3BA2500C347EB /* CoreData.framework */,
+				EF1A22F419E3BA2500C347EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1A22D519E3BA2500C347EB /* OnMyWay */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A22DE19E3BA2500C347EB /* OMWAppDelegate.h */,
+				EF1A22DF19E3BA2500C347EB /* OMWAppDelegate.m */,
+				EF1A22E119E3BA2500C347EB /* Main.storyboard */,
+				EF1A22E719E3BA2500C347EB /* OMWMasterViewController.h */,
+				EF1A22E819E3BA2500C347EB /* OMWMasterViewController.m */,
+				EF1A22EA19E3BA2500C347EB /* OMWDetailViewController.h */,
+				EF1A22EB19E3BA2500C347EB /* OMWDetailViewController.m */,
+				EF1A22ED19E3BA2500C347EB /* Images.xcassets */,
+				EF1A22E419E3BA2500C347EB /* OnMyWay.xcdatamodeld */,
+				EF1A22D619E3BA2500C347EB /* Supporting Files */,
+			);
+			path = OnMyWay;
+			sourceTree = "<group>";
+		};
+		EF1A22D619E3BA2500C347EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A22D719E3BA2500C347EB /* OnMyWay-Info.plist */,
+				EF1A22D819E3BA2500C347EB /* InfoPlist.strings */,
+				EF1A22DB19E3BA2500C347EB /* main.m */,
+				EF1A22DD19E3BA2500C347EB /* OnMyWay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF1A22FB19E3BA2500C347EB /* OnMyWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A230119E3BA2500C347EB /* OnMyWayTests.m */,
+				EF1A22FC19E3BA2500C347EB /* Supporting Files */,
+			);
+			path = OnMyWayTests;
+			sourceTree = "<group>";
+		};
+		EF1A22FC19E3BA2500C347EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A22FD19E3BA2500C347EB /* OnMyWayTests-Info.plist */,
+				EF1A22FE19E3BA2500C347EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1A22C919E3BA2400C347EB /* OnMyWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1A230519E3BA2500C347EB /* Build configuration list for PBXNativeTarget "OnMyWay" */;
+			buildPhases = (
+				EF1A22C619E3BA2400C347EB /* Sources */,
+				EF1A22C719E3BA2400C347EB /* Frameworks */,
+				EF1A22C819E3BA2400C347EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnMyWay;
+			productName = OnMyWay;
+			productReference = EF1A22CA19E3BA2400C347EB /* OnMyWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF1A22F219E3BA2500C347EB /* OnMyWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1A230819E3BA2500C347EB /* Build configuration list for PBXNativeTarget "OnMyWayTests" */;
+			buildPhases = (
+				EF1A22EF19E3BA2500C347EB /* Sources */,
+				EF1A22F019E3BA2500C347EB /* Frameworks */,
+				EF1A22F119E3BA2500C347EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF1A22FA19E3BA2500C347EB /* PBXTargetDependency */,
+			);
+			name = OnMyWayTests;
+			productName = OnMyWayTests;
+			productReference = EF1A22F319E3BA2500C347EB /* OnMyWayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1A22C219E3BA2400C347EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OMW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dog Forest";
+				TargetAttributes = {
+					EF1A22F219E3BA2500C347EB = {
+						TestTargetID = EF1A22C919E3BA2400C347EB;
+					};
+				};
+			};
+			buildConfigurationList = EF1A22C519E3BA2400C347EB /* Build configuration list for PBXProject "OnMyWay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF1A22C119E3BA2400C347EB;
+			productRefGroup = EF1A22CB19E3BA2400C347EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1A22C919E3BA2400C347EB /* OnMyWay */,
+				EF1A22F219E3BA2500C347EB /* OnMyWayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1A22C819E3BA2400C347EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A22EE19E3BA2500C347EB /* Images.xcassets in Resources */,
+				EF1A22DA19E3BA2500C347EB /* InfoPlist.strings in Resources */,
+				EF1A22E319E3BA2500C347EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A22F119E3BA2500C347EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A230019E3BA2500C347EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1A22C619E3BA2400C347EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A22E019E3BA2500C347EB /* OMWAppDelegate.m in Sources */,
+				EF1A22EC19E3BA2500C347EB /* OMWDetailViewController.m in Sources */,
+				EF1A22DC19E3BA2500C347EB /* main.m in Sources */,
+				EF1A22E919E3BA2500C347EB /* OMWMasterViewController.m in Sources */,
+				EF1A22E619E3BA2500C347EB /* OnMyWay.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A22EF19E3BA2500C347EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A230219E3BA2500C347EB /* OnMyWayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF1A22FA19E3BA2500C347EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF1A22C919E3BA2400C347EB /* OnMyWay */;
+			targetProxy = EF1A22F919E3BA2500C347EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF1A22D819E3BA2500C347EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1A22D919E3BA2500C347EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF1A22E119E3BA2500C347EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1A22E219E3BA2500C347EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1A22FE19E3BA2500C347EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1A22FF19E3BA2500C347EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1A230319E3BA2500C347EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF1A230419E3BA2500C347EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1A230619E3BA2500C347EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnMyWay/OnMyWay-Prefix.pch";
+				INFOPLIST_FILE = "OnMyWay/OnMyWay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF1A230719E3BA2500C347EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnMyWay/OnMyWay-Prefix.pch";
+				INFOPLIST_FILE = "OnMyWay/OnMyWay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF1A230919E3BA2500C347EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnMyWay.app/OnMyWay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnMyWay/OnMyWay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OnMyWayTests/OnMyWayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF1A230A19E3BA2500C347EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OnMyWay.app/OnMyWay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnMyWay/OnMyWay-Prefix.pch";
+				INFOPLIST_FILE = "OnMyWayTests/OnMyWayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1A22C519E3BA2400C347EB /* Build configuration list for PBXProject "OnMyWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1A230319E3BA2500C347EB /* Debug */,
+				EF1A230419E3BA2500C347EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1A230519E3BA2500C347EB /* Build configuration list for PBXNativeTarget "OnMyWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1A230619E3BA2500C347EB /* Debug */,
+				EF1A230719E3BA2500C347EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF1A230819E3BA2500C347EB /* Build configuration list for PBXNativeTarget "OnMyWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1A230919E3BA2500C347EB /* Debug */,
+				EF1A230A19E3BA2500C347EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF1A22E419E3BA2500C347EB /* OnMyWay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF1A22E519E3BA2500C347EB /* OnMyWay.xcdatamodel */,
+			);
+			currentVersion = EF1A22E519E3BA2500C347EB /* OnMyWay.xcdatamodel */;
+			path = OnMyWay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF1A22C219E3BA2400C347EB /* Project object */;
+}
