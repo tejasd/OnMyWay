@@ -25,6 +25,8 @@
 		EF1A22F819E3BA2500C347EB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A22D319E3BA2500C347EB /* CoreData.framework */; };
 		EF1A230019E3BA2500C347EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1A22FE19E3BA2500C347EB /* InfoPlist.strings */; };
 		EF1A230219E3BA2500C347EB /* OnMyWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A230119E3BA2500C347EB /* OnMyWayTests.m */; };
+		EF1A230C19E3BAF700C347EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A230B19E3BAF700C347EB /* MapKit.framework */; };
+		EF1A230E19E3BAFE00C347EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A230D19E3BAFE00C347EB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		EF1A22FD19E3BA2500C347EB /* OnMyWayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnMyWayTests-Info.plist"; sourceTree = "<group>"; };
 		EF1A22FF19E3BA2500C347EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF1A230119E3BA2500C347EB /* OnMyWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnMyWayTests.m; sourceTree = "<group>"; };
+		EF1A230B19E3BAF700C347EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EF1A230D19E3BAFE00C347EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1A230E19E3BAFE00C347EB /* CoreLocation.framework in Frameworks */,
+				EF1A230C19E3BAF700C347EB /* MapKit.framework in Frameworks */,
 				EF1A22D019E3BA2500C347EB /* CoreGraphics.framework in Frameworks */,
 				EF1A22D419E3BA2500C347EB /* CoreData.framework in Frameworks */,
 				EF1A22D219E3BA2500C347EB /* UIKit.framework in Frameworks */,
@@ -111,6 +117,8 @@
 		EF1A22CC19E3BA2400C347EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF1A230D19E3BAFE00C347EB /* CoreLocation.framework */,
+				EF1A230B19E3BAF700C347EB /* MapKit.framework */,
 				EF1A22CD19E3BA2400C347EB /* Foundation.framework */,
 				EF1A22CF19E3BA2500C347EB /* CoreGraphics.framework */,
 				EF1A22D119E3BA2500C347EB /* UIKit.framework */,
