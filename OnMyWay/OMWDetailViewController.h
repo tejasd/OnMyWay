@@ -14,5 +14,4 @@
 @property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end

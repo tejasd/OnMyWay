@@ -208,7 +208,21 @@
                             <constraint firstItem="YRX-13-jfT" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leading" id="iXa-Vx-jVh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="0bk-xu-Vno">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="afy-sD-Cag">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Reset Pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPinAction:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="fC5-vq-Ono"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="YRX-13-jfT" id="41f-b9-hpD"/>
                     </connections>
