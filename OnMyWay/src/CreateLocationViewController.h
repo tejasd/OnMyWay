@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OMWDetailViewController.h"
+#import "OMWGeoFence.h"
 
-@interface CreateLocationViewController : UITableViewController <UITableViewDelegate>
+@interface CreateLocationViewController : UITableViewController <UITableViewDelegate, OMWDetailViewDelegate>
+
+@property(nonatomic, strong)OMWGeoFence *thisGeoFence;
+@property(nonatomic, strong)id detailObject;
 
 @end

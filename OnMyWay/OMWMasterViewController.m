@@ -7,8 +7,8 @@
 //
 
 #import "OMWMasterViewController.h"
-
-#import "OMWDetailViewController.h"
+#import "OMWGeoFence.h"
+#import "CreateLocationViewController.h"
 
 @interface OMWMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -41,10 +41,11 @@
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    NSManagedObject *newManagedObject = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
     
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
+    [newManagedObject setValue:[[OMWGeoFence alloc] init] forKey:@"geoFence"];
     [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
     
     // Save the context.

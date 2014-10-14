@@ -28,6 +28,7 @@
 		EF1A230219E3BA2500C347EB /* OnMyWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A230119E3BA2500C347EB /* OnMyWayTests.m */; };
 		EF1A230C19E3BAF700C347EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A230B19E3BAF700C347EB /* MapKit.framework */; };
 		EF1A230E19E3BAFE00C347EB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A230D19E3BAFE00C347EB /* CoreLocation.framework */; };
+		EF1A231719E5103B00C347EB /* OMWGeoFence.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A231619E5103B00C347EB /* OMWGeoFence.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		EF1A230119E3BA2500C347EB /* OnMyWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnMyWayTests.m; sourceTree = "<group>"; };
 		EF1A230B19E3BAF700C347EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EF1A230D19E3BAFE00C347EB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EF1A231519E5103B00C347EB /* OMWGeoFence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OMWGeoFence.h; path = OnMyWay/Model/OMWGeoFence.h; sourceTree = "<group>"; };
+		EF1A231619E5103B00C347EB /* OMWGeoFence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMWGeoFence.m; path = OnMyWay/Model/OMWGeoFence.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 		EF1A22C119E3BA2400C347EB = {
 			isa = PBXGroup;
 			children = (
+				EF1A231819E5104400C347EB /* Model */,
 				EF1A22D519E3BA2500C347EB /* OnMyWay */,
 				EF1A22FB19E3BA2500C347EB /* OnMyWayTests */,
 				EF1A22CC19E3BA2400C347EB /* Frameworks */,
@@ -185,6 +189,15 @@
 				EF1A22FE19E3BA2500C347EB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF1A231819E5104400C347EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF1A231519E5103B00C347EB /* OMWGeoFence.h */,
+				EF1A231619E5103B00C347EB /* OMWGeoFence.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 				EF1A22E019E3BA2500C347EB /* OMWAppDelegate.m in Sources */,
 				EF1A22EC19E3BA2500C347EB /* OMWDetailViewController.m in Sources */,
 				EF1A22DC19E3BA2500C347EB /* main.m in Sources */,
+				EF1A231719E5103B00C347EB /* OMWGeoFence.m in Sources */,
 				EF1A22E919E3BA2500C347EB /* OMWMasterViewController.m in Sources */,
 				EF1A22E619E3BA2500C347EB /* OnMyWay.xcdatamodeld in Sources */,
 				099FF78019E3C527008934FF /* CreateLocationViewController.m in Sources */,

@@ -9,12 +9,11 @@
 #import "OMWDetailViewController.h"
 
 @interface OMWDetailViewController ()
-@property (strong, nonatomic) MKPointAnnotation *pinLocation;
 @end
 
 @implementation OMWDetailViewController
 
-#pragma mark - Managing the detail item
+#pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
@@ -28,11 +27,25 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.delegate recievePin:self.pinLocation];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Actions and outlets
+
+- (IBAction)resetPinAction:(id)sender {
+    [self resetPin];
+    
+}
+
+#pragma mark - map view delegate methods
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
@@ -55,10 +68,8 @@
     pinAnnotationView.pinColor = MKPinAnnotationColorRed;
     return pinAnnotationView;
 }
-- (IBAction)resetPinAction:(id)sender {
-    [self resetPin];
-    
-}
+
+#pragma mark - misc
 
 /**
  Reset the pin back to user location

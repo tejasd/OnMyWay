@@ -44,6 +44,7 @@
     
     // This will remove extra separators from tableview
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.thisGeoFence = [(NSManagedObject *)self.detailObject valueForKey:@"geoFence"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,10 +53,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender
-
+- (void)recievePin:(MKPointAnnotation *)location
 {
-    
+    self.thisGeoFence.pinLocation = location;
 }
 
 //#pragma mark - Table view data source
@@ -123,15 +123,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue destinationViewController] isKindOfClass:[OMWDetailViewController class]]) {
+        ((OMWDetailViewController *)[segue destinationViewController]).delegate = self;
+        [((OMWDetailViewController *)[segue destinationViewController]) setPinLocation:self.thisGeoFence.pinLocation];
+    }
 }
-*/
+
 
 @end
